@@ -5,6 +5,7 @@ Notes for PD Course from Kunal Ghosh
 Day - II (Floor Planning)
 
 Define Width and Height of Core and Die ?
+
 ![image](https://github.com/user-attachments/assets/b1a16439-dbc7-4d1f-9886-57ba6dabffeb)
 
 Utilization Factor = (Area Occupied by Netlist) / (Total Area of Core)
