@@ -28,13 +28,16 @@ If Aspect Ratio > or <1 (Die will be Rectangle)
 
 In OpenLANE, we have a lot of switches (variables/options/settings) for each step (synthesis, floorplan, placement, etc) to adjust the flow that is present in README.md inside the configuration dir of OpenLANE.
 
-image
+![image](https://github.com/user-attachments/assets/d2fbde0a-4461-4a63-aa9b-b5ed2e38b65f)
+
 
 README.md:
 
-image
+![image](https://github.com/user-attachments/assets/b5af01d6-d7c3-4f5f-8eb3-d41e08a80452)
 
-image
+
+![image](https://github.com/user-attachments/assets/402d4573-c1c5-4e05-8baf-0b48bedb2b9d)
+
 
 Where are the switches set?
 
@@ -42,7 +45,8 @@ In the .tcl file of the specific stage, Ex: floorplan.tcl file in configuration 
 
 less floorplan.tcl
 
-image
+![image](https://github.com/user-attachments/assets/2ee3dbbc-733e-46b1-8d41-b013d0120eb6)
+
 
 floorplan.tcl has the lowest priority.
 
@@ -52,4 +56,5 @@ In openlane flow, Horizontal metals (FP_IO_HMETAL) and Vertical metals (FP_IO_VM
 
 Ran the floorplan stage using command run_floorplan.
 
-image
+![image](https://github.com/user-attachments/assets/4158506e-ccd1-469e-8753-da3085f8347f)
+
