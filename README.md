@@ -48,6 +48,8 @@ less floorplan.tcl
 ![image](https://github.com/user-attachments/assets/2ee3dbbc-733e-46b1-8d41-b013d0120eb6)
 
 
+
+
 floorplan.tcl has the lowest priority.
 
 priority order: floorplan.tcl < config.tcl (openlane/designs/picorv32a) < pdk specific config file (openlane/designs/picorv32a) [Day1, point3]
@@ -57,4 +59,19 @@ In openlane flow, Horizontal metals (FP_IO_HMETAL) and Vertical metals (FP_IO_VM
 Ran the floorplan stage using command run_floorplan.
 
 ![image](https://github.com/user-attachments/assets/4158506e-ccd1-469e-8753-da3085f8347f)
+
+
+
+Netlist Binding -
+
+![image](https://github.com/user-attachments/assets/5f90b837-a600-4150-ba8a-69f09fc2211a)
+
+In library different flavours of same types of cells are present (as we go from left to right cell of the cells are increasing).
+Larger the size of cell -> Lesser will be the resistance path -> faster would be the cell
+
+
+
+Placement -
+
+
 
