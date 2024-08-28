@@ -75,3 +75,41 @@ Placement -
 
 
 
+
+Day IV (Prelayout timing analysis)
+
+![image](https://github.com/user-attachments/assets/c1306fbb-f922-4a41-9430-a6ba8dd820f4)
+
+Table in the left and right are the delay tables for different buffer cells. It captures the delay according to input slew and output load.
+
+
+Setup Timing Analysis -
+
+![image](https://github.com/user-attachments/assets/6618e886-ee71-41ce-a53c-4850fc97d4bc)
+
+Theta (O) is the combinational scenario. 
+
+![image](https://github.com/user-attachments/assets/27c867cb-79c4-4afb-9aa4-4eeffd2ba9df)
+
+The internal of the flop can be represented by 2 MUX's.
+As highlighted there will be sometime that will be spend by data to reach to Qm and this time needs to be subtracted from clock period and refered as setup time.
+
+
+![image](https://github.com/user-attachments/assets/4b3d4274-1f0c-44f6-99d9-3e160dfbd2fe)
+
+Clock Jitter -
+![image](https://github.com/user-attachments/assets/aa9849da-96ba-4010-9cc6-5d27fb71e606)
+
+Jitter is modelled using one more parameter "Uncertainity"
+
+
+
+Identifying timing paths of design with single clock
+
+![image](https://github.com/user-attachments/assets/3bdb8a8c-3efe-4a66-b4f3-4c40d7257ef8)
+
+
+Steps to optimize synthesis to reduce setup violations
+
+
+
