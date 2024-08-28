@@ -113,3 +113,22 @@ Steps to optimize synthesis to reduce setup violations
 
 
 
+
+
+CTS (CLock Tree Synthesis) -
+
+![image](https://github.com/user-attachments/assets/424164d9-cc75-4d26-93e6-960e507bac63)
+Drawing a basic clock tree to connect the clock pins of all the flops. Due to difference in clock net lengths ther will be mor delay introduced in case of longer clock nets and will result in skew. Ideally it is expoected to have 0 skew.
+
+
+![image](https://github.com/user-attachments/assets/46756c42-f1c3-4cf0-a561-6a7229726230)
+Using H-Tree approach to generate a Clock tree.
+
+
+![image](https://github.com/user-attachments/assets/681e32c2-e4db-4acf-a773-e5aff0953c71)
+
+Another problem is that at the otehr end of clock network (highlighted in above pic) the transition time would be so large because of huge delay across the path that it will cause a timing issue and signal integrity issue.
+To avoid this we need to repeaters.
+
+
+
