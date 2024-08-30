@@ -167,5 +167,29 @@ Using H-Tree approach to generate a Clock tree.
 Another problem is that at the otehr end of clock network (highlighted in above pic) the transition time would be so large because of huge delay across the path that it will cause a timing issue and signal integrity issue.
 To avoid this we need to repeaters.
 
+Pre-layout timing analysis on picorv32a
+technical keywords used in openlane:
+	tns: total negative slack
+	wns: worst negative slack
 
 
+Post synthesis STA check -
+initial slack values after synthesis
+![image](https://github.com/user-attachments/assets/50bb8bcd-e77b-4277-b09d-0ceae9208eae)
+
+initial chip area
+![image](https://github.com/user-attachments/assets/3184601b-ef9d-4bce-8bca-1ed641b91719)
+
+synthesis stratergy for abc tool in yosys
+![image](https://github.com/user-attachments/assets/4b219d67-1d31-4c57-b8aa-3f24df8980f5)
+
+changing settings for better slack values
+![image](https://github.com/user-attachments/assets/106de4c0-06ed-4a41-a098-977ce9cb9212)
+
+improved verilog after synthesis with settings
+![image](https://github.com/user-attachments/assets/c4b52dee-2817-410a-b400-e91d3980655e)
+
+
+
+running placement and view design in magic
+![image](https://github.com/user-attachments/assets/210b9e07-bdc1-4d87-8349-85d10a65a7d4)
