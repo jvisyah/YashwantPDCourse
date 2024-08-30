@@ -193,3 +193,48 @@ improved verilog after synthesis with settings
 
 running placement and view design in magic
 ![image](https://github.com/user-attachments/assets/210b9e07-bdc1-4d87-8349-85d10a65a7d4)
+
+
+Day5
+
+PDN generation and routing theory
+1. PDN structure
+
+![image](https://github.com/user-attachments/assets/4f58c595-479c-4a74-aaa5-1d514f8cab5d)
+
+Maze routing
+1. Routing algorithm -> connect 2 points in design in best possible way with less bends
+![image](https://github.com/user-attachments/assets/c2ce43b8-ad36-4f87-b60a-551314caf29c)
+
+2. Routing grid
+![image](https://github.com/user-attachments/assets/20719eca-b9fc-408e-bd14-9512f7d8b82a)
+
+3. Maze routing -> time taking procss -> creating routing grid and propagating weights from start point to end point
+
+DRC clean routing
+1. wire width
+![image](https://github.com/user-attachments/assets/48ef70c1-98ca-4318-82a0-d0551daf7ef4)
+
+2. wire pitch
+![image](https://github.com/user-attachments/assets/76bd811f-7b25-4e0e-84bc-dad20081b48d)
+
+3. Signal Short
+![image](https://github.com/user-attachments/assets/ec0ec359-c444-4773-b8ec-d2f6643efacb)
+
+Parasitic Extraction
+1. parasitic extraction after routing stage
+
+![image](https://github.com/user-attachments/assets/09771dba-1a7b-409f-8859-7052ca829970)
+
+PDN generation on picorv32a
+1. generating pnd on picorv32a, command: gen_pdn
+![image](https://github.com/user-attachments/assets/2fc2d86f-1a77-4ef3-a28f-b69fff6af757)
+
+2. pdn gen done, grid structure
+![image](https://github.com/user-attachments/assets/7b108149-bef3-4e47-98fc-c7104cae6b55)
+
+3. new def file
+![image](https://github.com/user-attachments/assets/13927fbc-05c5-4f82-b557-9c99235f90c0)
+
+4. viewing pdn def using magic
+![image](https://github.com/user-attachments/assets/69f5d99b-2543-493b-ad96-6cc001254a6f)
