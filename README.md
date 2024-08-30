@@ -1,6 +1,43 @@
 # YashwantPDCourse
 Notes for PD Course from Kunal Ghosh
 
+ASIC design flow
+
+Synthesis
+	mapping of lib std cells to RTL code, tool - yosys
+Floorplanning
+	Planning die area of IC based on gate level netlist cells and core utilization %. Pin locations and macro locations (pre-placed cells) on die.
+Powerplanning
+	Define pg grid structure. Global placement->optimal placement of instnces according to timing constraint, can be invalid placement. Detailed placement- >legalizing global placement.
+CTS (clock tree synthesis)
+	placing clock network conneting sequential cells and clock instnces.
+Routing
+	Signal routing between input and output data pins of instances.
+Signoff
+	physical verification - DRC,LVS. timing verification - STA, CDC. fault check - DFT.
+
+
+Synthesis of picv32a design
+Using picrv32a design for synthesis
+
+Task: To find FF ratio in design-> FF ratio: 1613/14876=0.1084 (10.8%)
+
+checking config.tcl in design/picrv32a/src dir.
+![image](https://github.com/user-attachments/assets/4841c8ac-31d1-407d-bb4e-1d3e5ea63c6a)
+
+preparing design in openlane
+![image](https://github.com/user-attachments/assets/8d48f2f5-495e-4878-9973-7cc2de6cbe68)
+
+running synthesis (command: run_synthesis)
+![image](https://github.com/user-attachments/assets/4579139a-1d29-462f-b43f-8d07b0690ffb)
+
+
+verilog vs gate level netlist
+![image](https://github.com/user-attachments/assets/bc6ad5f3-9116-40df-9264-be10c1a86f66)
+
+synthesis report
+![image](https://github.com/user-attachments/assets/cf7f8654-29a8-437b-aa42-152c9fe419b3)
+
 
 Day - II (Floor Planning)
 
